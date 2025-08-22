@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTS Service</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="logo.png" alt="ACTS Service Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home"><img src="home.svg" alt="">Home</a></li>
+                <li><a href="#about"><img src="about.svg" alt="">About</a></li>
+                <li><a href="#ministries"><img src="ministries.svg" alt="">Ministries</a></li>
+                <li><a href="#sermons"><img src="sermons.svg" alt="">Sermons</a></li>
+                <li><a href="#events"><img src="events.svg" alt="">Events</a></li>
+                <li><a href="#contact"><img src="contact.svg" alt="">Contact</a></li>
+                <li><a href="#social"><img src="social.svg" alt="">Social</a></li>
+            </ul>
+            <button class="join-btn" id="rsvpBtn">Join Us</button>
+            <div class="mobile-menu-toggle" id="mobileToggle">&#9776;</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">For the Young and the Young at Heart</h1>
+            <p class="verse">"Bible Verse of the Day Here"</p>
+            <a href="#sermons" class="cta-btn">Watch Sermons Online</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section fade-in">
+        <div class="container">
+            <h2>About ACTS Service</h2>
+            <p>Our mission is to guide and inspire our congregation with love and faith. Our vision is to nurture spiritual growth for all ages.</p>
+            <p>Short history of ACTS Service goes here...</p>
+            <div class="pastor">
+                <img src="pastor.png" alt="Pastor">
+                <p>Greetings from our Pastor!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ministries Section -->
+    <section id="ministries" class="ministries-section fade-in">
+        <div class="container">
+            <h2>Our Ministries</h2>
+            <div class="ministry-cards">
+                <div class="card"><img src="ministry1.png" alt="Sunday Service"><p>Sunday Service</p></div>
+                <div class="card"><img src="ministry2.png" alt="Youth Week"><p>Youth Week</p></div>
+                <div class="card"><img src="ministry3.png" alt="Community Outreach"><p>Community Outreach</p></div>
+                <div class="card"><img src="ministry4.png" alt="Bible Study"><p>Bible Study Groups</p></div>
+                <div class="card"><img src="ministry5.png" alt="Theatre Ministry"><p>Theatre Ministry</p></div>
+                <div class="card"><img src="ministry6.png" alt="Acts Tuesday"><p>Acts Tuesday</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sermons / Media Section -->
+    <section id="sermons" class="sermons-section fade-in">
+        <div class="container">
+            <h2>Past Sermons & Media</h2>
+            <div class="media">
+                <div class="video">
+                    <iframe width="400" height="225" src="https://www.youtube.com/embed/samplevideo" frameborder="0" allowfullscreen></iframe>
+                    <p>YouTube Video</p>
+                </div>
+                <div class="audio">
+                    <audio controls>
+                        <source src="audio/sample.mp3" type="audio/mpeg">
+                    </audio>
+                    <p>Telegram Audio</p>
+                </div>
+            </div>
+            <a href="pdf/devotional.pdf" class="download-btn" download>Download Devotional PDF</a>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events-section fade-in">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Sunday Service: 8AM & 11AM</li>
+                <li>Prayer Meeting: Wednesdays 6PM</li>
+                <li>Youth Week: July 15-21</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section fade-in">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="map">Map Placeholder</div>
+            <div class="social-links" id="social">
+                <a href="#"><img src="instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="tiktok.svg" alt="TikTok"></a>
+                <a href="#"><img src="youtube.svg" alt="YouTube"></a>
+                <a href="#"><img src="whatsapp.svg" alt="WhatsApp"></a>
+                <a href="#"><img src="telegram.svg" alt="Telegram"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer fade-in">
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#ministries">Ministries</a></li>
+                <li><a href="#sermons">Sermons</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p>&copy; 2025 ACTS Service. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- RSVP Popup -->
+    <div id="rsvpPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>RSVP to Join Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="map">Map Placeholder</div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
